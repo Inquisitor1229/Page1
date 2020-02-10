@@ -1,0 +1,87 @@
+section.promotions
+  .promotions-container
+    h2.promotions__header Promotions
+    .row
+      - let img = ["img/promotion1.png","img/promotion2.png","img/promotion3.png"]
+      - let header_p = ["Digital","Print + Digital","Special Offer"]
+      - for(i=0; i<3; i++)
+        .promotions__card.col-12.col-md-6.col-lg-4
+          .promotions__promotion
+            .promotions__card-top
+              .promotions__card-wrap
+                img(src=img[i] alt="photo")
+            .promotions__card-bottom
+              .promotions__card-header-container
+                - if (i==0) 
+                  h3.promotions__card-header.promotions__card-header--blue=header_p[i]
+                - if (i==1)
+                  h3.promotions__card-header.promotions__card-header--green=header_p[i]
+                - if (i==2)
+                  h3.promotions__card-header.promotions__card-header--darkblue=header_p[i]
+              span.promotions__card-price 99¢
+              span.promotions__card-subject 4 weeks only then $1.99 / week
+              - if (i==0)
+                a.promotions__link-start.promotions__link-start--blue START NOW
+              - if (i==1)
+                a.promotions__link-start.promotions__link-start--green START NOW
+              - if (i==2)
+                a.promotions__link-start.promotions__link-start--darkblue START NOW
+              - if (i==0)
+                ul.promotions__list.promotions__list--blue
+                  li.promotions__list-item
+                    p.promotions__list-marker ✓ 
+                    p Unlimited access to online content
+                  li.promotions__list-item
+                    p.promotions__list-marker ✓ 
+                    p Unlimited access plus breaking news alerts
+                  li.promotions__list-item
+                    p.promotions__list-marker ✓ 
+                    p A digital replica of the paper, emailed daily
+              - if (i==1)
+                ul.promotions__list.promotions__list--green
+                  li.promotions__list-item
+                    p.promotions__list-marker ✓ 
+                    p Unlimited access to online content
+                  li.promotions__list-item
+                    p.promotions__list-marker ✓ 
+                    p Unlimited access plus breaking news alerts
+                  li.promotions__list-item
+                    p.promotions__list-marker ✓ 
+                    p A digital replica of the paper, emailed daily
+                  li.promotions__list-item
+                    p.promotions__list-marker ✓ 
+                    p Money-saving offers and weekly sales
+              - if (i==2)
+                ul.promotions__list.promotions__list--darkblue
+                  li.promotions__list-item
+                    p.promotions__list-marker ✓ 
+                    p Unlimited access to online content
+                  li.promotions__list-item
+                    p.promotions__list-marker ✓ 
+                    p Unlimited access plus breaking news alerts
+                  li.promotions__list-item
+                    p.promotions__list-marker ✓ 
+                    p A digital replica of the paper, emailed daily
+                  li.promotions__list-item
+                    p.promotions__list-marker ✓ 
+                    p Money-saving offers and weekly sales
+                  li.promotions__list-item
+                    p.promotions__list-marker ✓
+                    p The print edition, delivered Sunday
+              - if(i==0)
+                .promotions__checkboks
+                  .promotions__checkboks-item
+                    input(type="checkbox" value="checked" checked) 
+                    p Checked
+                  .promotions__checkboks-item
+                    input(type="checkbox" value="empty") 
+                    p Empty
+                  .promotions__checkboks-item
+                    input(type="checkbox" value="disabled" disabled) 
+                    p Disabled
+            - if (i==0)
+              a(href="#").promotions__card-details.promotions__card-details--blue DETAILS
+            - if (i==1)
+              a(href="#").promotions__card-details.promotions__card-details--green DETAILS
+            - if (i==2)
+              a(href="#").promotions__card-details.promotions__card-details--darkblue DETAILS

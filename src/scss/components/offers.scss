@@ -1,0 +1,67 @@
+.offers{
+  max-width: 1920px;
+  margin-top: 60px;
+  padding: 0 15px 60px 15px;
+  border-bottom: 1px solid #e5e5e5;
+  &-container{
+    max-width: 1520px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__header {
+    font-size: 18px;
+    color: rgba(0,0,0,0.6);
+  }
+
+  &__cards {
+    margin-top: 45px;
+  }
+
+  &__card {
+    display: flex;
+    padding: 0 35px 45px 35px;
+  }
+
+  &__card-container {
+    max-width: 400px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  &__card-header {
+    color: #1ab0b9;
+    font-size: 28px;
+  }
+
+  &__card-subject {
+    font-size: 18px;
+    margin-top: 25px;
+    color: #000000;
+  }
+
+  &__card-link {
+    margin-top: 40px;
+    color: #ffffff;
+    background-color: #1ab0b9;
+    border-radius: 9999px;
+    border: 2px solid #1ab0b9;
+    padding: 15px 28px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.5s;
+
+    &:hover {
+      color: #1ab0b9;
+      background-color: #ffffff;
+    }
+  }
+}

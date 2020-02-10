@@ -1,0 +1,11 @@
+section.offers
+  .offers-container
+    h2.offers__header OFFERS
+    .row.offers__cards
+      - let header_o = ["Sunday Only","Thursday-Sunday","Monday-Sunday"]
+      - for (i=0; i<3; i++)
+        .offers__card.col-12.col-md-6.col-lg-4
+          .offers__card-container
+            h3.offers__card-header=header_o[i]
+            p.offers__card-subject 99&#xa2; / 4 weeks only then $1.99 / week
+            a(href="#").offers__card-link START NOW

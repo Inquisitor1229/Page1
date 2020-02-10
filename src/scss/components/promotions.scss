@@ -1,0 +1,206 @@
+.promotions {
+  max-width: 1920px;
+  margin-top: 60px;
+  padding: 0 15px;
+  &-container {
+    max-width: 1520px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__header {
+    display: none;
+  }
+
+  &__card {
+    display: flex;
+    padding: 0 15px 20px 15px;
+  }
+
+  &__promotion {
+    max-width: 400px;
+    width: 100%;
+    margin: 0 auto 30px;
+    box-shadow: 0px 0px 29px 3px rgba(0,0,0,0.12);
+    overflow: hidden;
+    transition: 0.5s;
+    height: 100%;
+
+    &:hover {
+      background-color: rgba(0,0,0,0.1);
+    }
+  }
+
+  &__card-top {
+    position: relative;
+    padding: 50% 0 0;
+  }
+
+  &__card-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #ccc;
+  }
+
+  &__card-bottom {
+    padding: 30px;
+    display: flex;
+    height: 100%;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__card-header {
+    font-size: 28px;
+
+    &--blue {
+      color: #2b87dc;
+    }
+
+    &--green {
+      color: #1ab0b9;
+    }
+
+    &--darkblue {
+      color: #3a55af;
+    }
+  }
+
+  &__card-price {
+    margin-top: 10px;
+    font-size: 24px;
+    color: #000000;
+  }
+
+  &__card-subject {
+    font-size: 16px;
+    margin-top: 7px;
+    color: #000000;
+  }
+
+  &__link-start {
+    margin-top: 25px;
+    padding: 13px 32px;
+    color: #ffffff;
+    border-radius: 9999px;
+    font-size: 15px;
+    transition: 0.5s;
+
+    &--blue {
+      background-color: #2b87dc;
+      border: 2px solid #2b87dc;
+      cursor: pointer;
+
+      &:hover {
+        background-color: #ffffff;
+        color: #2b87dc;
+      }
+    }
+
+    &--green {
+      background-color: #1ab0b9;
+      border: 2px solid #1ab0b9;
+      cursor: pointer;
+
+      &:hover {
+        background-color: #ffffff;
+        color: #1ab0b9;
+      }
+    }
+
+    &--darkblue {
+      background-color: #3a55af;
+      border: 2px solid #3a55af;
+      cursor: pointer;
+
+      &:hover {
+        background-color: #ffffff;
+        color: #3a55af;
+        border: 2px solid #3a55af;
+      }
+    }
+  }
+
+  &__list {
+    margin-top: 50px;
+    align-self: flex-start;
+
+    &-marker {
+      font-size: 15px;
+    }
+
+    &-item {
+      display: flex;
+      padding-bottom: 25px;
+
+      p {
+        padding-right: 10px;
+        font-size: 14px;
+        color: #000000;
+      }
+    }
+
+    &--blue &-marker{
+      color: #2b87dc;
+    }
+
+    &--green &-marker{
+      color: #1ab0b9;
+    }
+
+    &--darkblue &-marker{
+      color: #3a55af;
+    }
+  }
+
+  &__checkboks {
+    align-self: flex-start;
+
+    &-item {
+      display: flex;
+      flex-direction: row;
+
+      p {
+        padding-bottom: 20px;
+        color: #000000;
+        font-size: 14px;
+        padding-left: 5px;
+      }
+    }
+  }
+
+  &__card-details {
+    position: absolute;
+    bottom: 5%;
+    left: 45%;
+    right: 45%;
+    font-size: 15px;
+    transition: 0.5s;
+
+    &:hover {
+      opacity: 0.8;
+    }
+
+    &--blue {
+      color: #2b87dc;
+    }
+
+    &--green {
+      color: #1ab0b9;
+    }
+
+    &--darkblue {
+      color: #3a55af;
+    }
+  }  
+}

@@ -1,0 +1,41 @@
+.text{
+  max-width: 1920px;
+  margin-top: 60px;
+  &-container{
+    max-width: 1520px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__header {
+    font-size: 28px;
+  }
+
+  &__main-text {
+    margin-top: 30px;
+    font-size: 15px;
+    max-width: 880px;
+    text-align: center;
+    color: #000000;
+    padding: 0 15px;
+  }
+
+  &__btn-more{
+    margin-top: 40px;
+    font-size: 14px;
+    border: 2px solid #000000;
+    border-radius: 9999px;
+    padding: 8px 38px;
+    color: #000000;
+    transition: 0.5s;
+    cursor: pointer;
+
+    &:hover {
+      color: #ffffff;
+      background-color: #000000;
+    }
+  }
+}

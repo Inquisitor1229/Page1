@@ -1,0 +1,138 @@
+@import "normalize.css";
+@import "bootstrap-grid.min.css";
+@import "bootstrap.min.css";
+@import "components/title.css";
+@import "components/promotions.css";
+@import "components/footer.css";
+@import "components/header.css";
+@import "components/benefits.css";
+@import "components/slider.css";
+@import "components/text.css";
+@import "components/offers.css";
+
+@font-face{
+  font-family: 'Roboto';
+  src: url(../fonts/Roboto-Regular.ttf) format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face{
+  font-family: 'Roboto';
+  src: url(../fonts/Roboto-Medium.ttf) format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  color: #6a696b;
+  font-family: 'Roboto', sans-serif;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.main {
+  flex: 1;
+  margin: 0 auto;
+}
+
+
+
+/* Базовые стили, начало*/
+
+img {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+a {
+  color: #717072;
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 12px;
+  transition: all 0.2s ease;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  list-style: none;
+}
+
+p {
+  color: #717072;
+  font-size: 12px;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 60px;
+  display: none;
+}
+
+h2 {
+  font-size: 45px;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+h4 {
+  font-size: 14px;
+}
+
+h5 {
+  font-size: 10px;
+}
+
+h6 {
+  font-size: 8px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  color: #2b2b2b;
+}
+
+/* Базовые стили, конец */
+
+.main {
+  margin: 0 auto;
+  max-width: 1920px;
+}
+
+@media (max-width: 1140px) {
+  h2 {
+      font-size: 38px;
+  }
+}
+
+@media (max-width: 960px) {
+  h2 {
+      font-size: 30px;
+  }
+
+  h3 {
+      font-size: 16px;
+  }
+}

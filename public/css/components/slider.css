@@ -1,0 +1,37 @@
+.slider {
+  max-width: 1920px;
+  max-height: 550px;
+  overflow: hidden;
+  margin-top: 60px; }
+  .slider__header {
+    display: none; }
+
+.carousel-item {
+  height: 300px;
+  min-height: 300px; }
+  .carousel-item img {
+    margin: auto;
+    width: 100%;
+    height: 100%; }
+
+.carousel-indicators li {
+  border-radius: 50%;
+  width: 5px;
+  height: 5px;
+  background-color: #fff; }
+
+.carousel-indicators .active {
+  background-color: #fefefe; }
+
+.carousel-caption {
+  top: 40%;
+  bottom: 50%; }
+  .carousel-caption-sub {
+    font-weight: 600;
+    font-size: 42px; }
+  .carousel-caption-h {
+    font-size: 16px; }
+  .carousel-caption span {
+    text-transform: uppercase; }
+
+/*# sourceMappingURL=slider.css.map */
